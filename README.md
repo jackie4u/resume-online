@@ -3,12 +3,16 @@ Personal blog site
 
 ## setup
 
+```sh
 hugo new site janek4u
+```
 
 ### Themes
 
-#### hugo-clarity
-git submodule add https://github.com/chipzoller/hugo-clarity themes/hugo-clarity
+[hugo-clarity](https://themes.gohugo.io/themes/hugo-clarity/)
 
-#### hugo-theme-cleanwhite
-git submodule add https://github.com/zhaohuabing/hugo-theme-cleanwhite.git themes/hugo-theme-cleanwhite
+```sh
+git submodule add https://github.com/chipzoller/hugo-clarity themes/hugo-clarity
+```
+
+<!-- Considered theme https://themes.gohugo.io/themes/hugo-theme-cleanwhite/ as well -->
