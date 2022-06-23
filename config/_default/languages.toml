@@ -1,0 +1,10 @@
+
+[cz]
+  title = "Janek4u blog"
+  LanguageName = "Czech"
+  weight = 1
+
+[en]
+  title = "Janek4u blog"
+  LanguageName = "English"
+  weight = 2
