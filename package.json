@@ -1,0 +1,23 @@
+{
+  "name": "janek4u",
+  "version": "1.0.0",
+  "description": "Personal blog site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackie4u/janek4u.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackie4u/janek4u/issues"
+  },
+  "homepage": "https://github.com/jackie4u/janek4u#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
