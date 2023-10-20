@@ -3,16 +3,16 @@ Personal blog site
 
 ## setup
 
-```sh
-hugo new site janek4u
-```
-
-### Themes
-
-[hugo-clarity](https://themes.gohugo.io/themes/hugo-clarity/)
+Run this:
 
 ```sh
-git submodule add https://github.com/chipzoller/hugo-clarity themes/hugo-clarity
+npm install
+npm start
 ```
 
-<!-- Considered theme https://themes.gohugo.io/themes/hugo-theme-cleanwhite/ as well -->
+Navigate to `http://localhost:8080/` in your web browser.
+
+### Used tech
+
+- [11ty](https://www.11ty.dev/)
+- [Pico CSS](https://picocss.com/)

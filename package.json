@@ -1,9 +1,11 @@
 {
-  "name": "janek4u",
+  "name": "janek4u blog",
   "version": "1.0.0",
   "description": "Personal blog site",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,8 +13,8 @@
     "url": "git+https://github.com/jackie4u/janek4u.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jan Vackar",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jackie4u/janek4u/issues"
   },
