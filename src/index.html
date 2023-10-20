@@ -8,8 +8,3 @@ layout: layout.html
   <p>{% include 'resume/summary.md' %}</p>
 </section>
 <!-- ./ Summary -->
-
-{% for project in collections.projects %}
-<h2><a href="{{ post.url }}">{{ project.data.title }}</a></h2>
-<p>{{ project.templateContent }}</p>
-{% endfor %}

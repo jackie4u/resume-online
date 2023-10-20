@@ -1,0 +1,17 @@
+{
+  "language": "en",
+  "name": "Online Resume",
+	"url": "https://vackar.net/",
+  "title": "Jan Vačkář - Resume",
+  "description": "Resume for online presence",
+	"author": {
+		"name": "Jan Vačkář",
+		"email": "vackar.jan@gmail.com",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/vackar/",
+      "github": "https://github.com/jackie4u",
+      "mastodon": "https://techhub.social/@jackie4u"
+    },
+    "address": ""
+	}
+}

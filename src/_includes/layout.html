@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ "Jan Vačkář" - title | default: "Jan Vačkář" }}</title>
+    <title>{{ metadata.author.name - title | default: metadata.author.title }}</title>
     <!-- Pico.css -->
     <link
 			rel="stylesheet"
@@ -15,8 +15,8 @@
     <!-- Header -->
     <header class="container">
       <hgroup>
-        <h1>Jan Vačkář</h1>
-        <h2>{{ title | default: "Resume" }}</h2>
+        <h1>{{metadata.author.name}}</h1>
+        <h2>{{ title | default: metadata.name }}</h2>
       </hgroup>
       <nav>
 				<ul>

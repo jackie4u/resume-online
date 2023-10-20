@@ -1,5 +1,5 @@
-# janek4u
-Personal blog site
+# resume-online
+Personal resume site
 
 ## setup
 

@@ -1,7 +1,7 @@
 {
-  "name": "janek4u blog",
+  "name": "Jan Vackar resume",
   "version": "1.0.0",
-  "description": "Personal blog site",
+  "description": "Personal site with resume",
   "main": "index.html",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
@@ -10,15 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jackie4u/janek4u.git"
+    "url": "git+https://github.com/jackie4u/resume-online.git"
   },
-  "keywords": [],
-  "author": "Jan Vackar",
+  "keywords": [
+    "11ty",
+		"picocss",
+		"eleventy"
+  ],
+  "author": "jackie4u",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jackie4u/janek4u/issues"
+    "url": "https://github.com/jackie4u/resume-online/issues"
   },
-  "homepage": "https://github.com/jackie4u/janek4u#readme",
+  "homepage": "https://github.com/jackie4u/resume-online#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
   }
