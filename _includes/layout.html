@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ "Jan Vačkář" - title | default: "Jan Vačkář" }}</title>
+    <!-- Pico.css -->
+    <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+			/>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="container">
+      <hgroup>
+        <h1>Jan Vačkář</h1>
+        <h2>{{ title | default: "Resume" }}</h2>
+      </hgroup>
+      <nav>
+				<ul>
+					<li><a href="#" role="button">contacts</a></li>
+					<li><a href="#" role="button">summary</a></li>
+					<li><a href="#" role="button">techstack</a></li>
+					<li><a href="#" role="button">projects</a></li>
+				</ul>
+			</nav>
+    </header>
+    <!-- ./ Header -->
+		
+    <!-- Main -->
+    <main class="container">{{ content }}</main>
+    <!-- ./ Main -->
+
+    <!-- Footer -->
+    <footer class="container">
+      <small>
+        Built with:
+        <a href="https://www.11ty.dev/">11ty</a> •
+        <a href="https://picocss.com">Pico</a> •
+      </small>
+    </footer>
+    <!-- ./ Footer -->
+
+    <!-- Minimal theme switcher -->
+    <!-- <script src="js/minimal-theme-switcher.js"></script> -->
+  </body>
+</html>
