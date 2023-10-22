@@ -1,16 +1,25 @@
 backend:
   # Use netlify identity as backend
   name: git-gateway
-  branch: master
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: jackie4u/resume-online
-  # optional, defaults to master
-  # branch: main
   
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
+
 # publish_mode: editorial_workflow
+collections:
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Meta Data"
+        name: "metadata"
+        file: "src/_data/metadata.json"
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: URL, name: url, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
