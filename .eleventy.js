@@ -6,9 +6,13 @@ module.exports = function(eleventyConfig) {
 
   // const pluginNavigation = require('@11ty/eleventy-navigation')
 
-  // Copy Static Files to /_Site
+  // Copy Admin Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
+    ".src/admin/confirmation.html": "./admin/confirmation.html",
+    "./src/admin/email-change.html": "./admin/email-change.html",
+    "./src/admin/invitation.html": "./admin/invitation.html",
+    "./src/admin/recovery.html": "./admin/recovery.html",
   });
 
   // Copy Image Folder to /_site
