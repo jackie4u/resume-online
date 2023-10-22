@@ -8,7 +8,8 @@ module.exports = function(eleventyConfig) {
 
   // Copy Admin Files to /_Site
   eleventyConfig.addPassthroughCopy({
-    "./src/admin/config.yml": "./admin/config.yml",
+    // TEMPORARY FIX of CMS Admin
+    "./src/admin/config.yml": "./config.yml",
     ".src/admin/confirmation.html": "./admin/confirmation.html",
     "./src/admin/email-change.html": "./admin/email-change.html",
     "./src/admin/invitation.html": "./admin/invitation.html",
