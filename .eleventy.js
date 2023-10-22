@@ -6,6 +6,14 @@ module.exports = function(eleventyConfig) {
       output: "_site"
     }
   }
-};
 
-// const pluginNavigation = require('@11ty/eleventy-navigation')
+  // const pluginNavigation = require('@11ty/eleventy-navigation')
+
+  // Copy Static Files to /_Site
+  eleventyConfig.addPassthroughCopy({
+    "./src/admin/config.yml": "./admin/config.yml",
+  });
+
+  // Copy Image Folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/img");
+};
