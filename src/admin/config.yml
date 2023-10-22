@@ -1,6 +1,9 @@
 backend:
   # Use netlify identity as backend
-  name: git-gateway
+  # name: git-gateway
+  name: github
+  repo: jackie4u/resume-online
+  branch: main
   
 media_folder: "src/static/img"
 public_folder: "/static/img"
