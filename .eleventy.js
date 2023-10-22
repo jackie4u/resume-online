@@ -1,11 +1,8 @@
 module.exports = function(eleventyConfig) {
-  // Return your Object options:
-  return {
-    dir: {
-      input: "src",
-      output: "_site"
-    }
-  }
+  
+  // To Support .yaml Extension in _data
+  // You may remove this if you can use JSON
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   // const pluginNavigation = require('@11ty/eleventy-navigation')
 
@@ -16,4 +13,12 @@ module.exports = function(eleventyConfig) {
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
+
+  // Return your Object options:
+  return {
+    dir: {
+      input: "src",
+      output: "_site"
+    }
+  }
 };
