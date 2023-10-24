@@ -15,8 +15,8 @@ module.exports = function(eleventyConfig) {
     "./src/admin/recovery.html": "./admin/recovery.html",
   });
 
-  // Copy Image Folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/img");
+  // Copy Static Folders to /_site
+  eleventyConfig.addPassthroughCopy("./src/static");
 
   // Return your Object options:
   return {

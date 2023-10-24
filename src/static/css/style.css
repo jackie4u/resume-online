@@ -1,0 +1,44 @@
+html {
+	scroll-behavior: smooth;
+}
+
+/** Poor man's reset **/
+* {
+	box-sizing: border-box;
+}
+
+/** page layout **/
+#resume-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-toc  {
+  width: 25em; /* you can adjust this as needed */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6em;
+  align-self: start;
+}
+
+.resume-toc a {
+	text-decoration: none;
+	display: block;
+	padding: .125rem 0;
+	color: #ccc;
+	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.resume-toc  li.active > a {
+	color: var(--primary);
+	font-weight: 500;
+}
+
+.resume-toc  a:hover,
+.resume-toc  a:focus {
+	color: #666;
+}
+
+#resume-content {
+  display: block;
+}

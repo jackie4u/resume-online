@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ metadata.author.name - title | default: metadata.author.title }}</title>
-    <!-- Pico.css -->
-    <link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
-			/>
-      <!-- ./ Pico.css -->
-      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤓</text></svg>"></link>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤓</text></svg>">
+    </link>
   </head>
 
-  <body>
-    <!-- Header -->
+  <body class="container">
+
     <header class="container">
       <hgroup>
         <h1>{{metadata.author.name}}</h1>
         <h2>{{ title | default: metadata.name }}</h2>
       </hgroup>
-      <nav>
-				<ul>
-					<li><a href="#" role="button">contacts</a></li>
-					<li><a href="#" role="button">summary</a></li>
-					<li><a href="#" role="button">techstack</a></li>
-					<li><a href="#" role="button">projects</a></li>
-				</ul>
-			</nav>
     </header>
-    <!-- ./ Header -->
-		
-    <!-- Main -->
-    <main class="container">{{ content }}</main>
-    <!-- ./ Main -->
 
-    <!-- Footer -->
+    <main class="container">
+        {{ content }}
+    </main>
+
     <footer class="container">
       <small>
         Built with:
@@ -43,9 +33,10 @@
         <a href="https://picocss.com">Pico</a> •
       </small>
     </footer>
-    <!-- ./ Footer -->
 
-    <!-- Minimal theme switcher -->
-    <!-- <script src="js/minimal-theme-switcher.js"></script> -->
+    <script type="text/javascript" src="static/js/main.js">
+
+    </script>
   </body>
+
 </html>

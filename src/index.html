@@ -2,62 +2,57 @@
 layout: layout.html
 ---
 
-<!-- Summary -->
-<section id="summary">
-  <h3>Summary</h3>
-  <p>{% include 'resume/summary.md' %}</p>
-</section>
-<!-- ./ Summary -->
+<div id="resume-wrapper">
+  
+  <div class="resume-toc">
+    <aside>
+      <nav>
+        <ul class="menu section-nav">
+          <li class="item"><a href="#contact">Contact</a></li>
+          <li class="item"><a href="#summary">About</a></li>
+          <li class="item"><a href="#techstack">Techstack</a></li>
+          <li class="item"><a href="#experiences">Experiences</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
 
-<!-- Experiences -->
-<section id="summary">
-  <h3>Experiences</h3>
+  <div id="resume-content">
+    <section id="contact" class="container">
+      <h3>Contact</h3>
+      <ul>
+        <li>Email: jackie4u@seznam.cz</li>
+        <li>Phone: (+420) 605-868-797</li>
+        <li><a href="https://linkedin.com/in/vackar" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/jackie4u" target="_blank">GitHub</a></li>
+        <li><a href="https://techhub.social/@jackie4u" target="_blank">Mastodon</a></li>
+      </ul>
+    </section>
 
-  <table>
-    <thead>
-      <tr>
-        <th scope="col">Dates</th>
-        <th scope="col">Company</th>
-        <th scope="col">Location</th>
-        <th scope="col">Position</th>
-        <th scope="col">Description</th>
-        <th scope="col">Technologies</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Aug. 2017 – Jul. 2022</td>
-        <td>Oriflame Software s.r.o.</td>
-        <td>Olomouc, Czech Republic</td>
-        <td>Datawarehouse developer</td>
-        <td>
-          Database programming (procedures) and administration of BI/DWH
-          system...
-        </td>
-        <td>
-          Oracle Database 12c R2, Oracle Database 19c, IBM Cognos BI, Power BI,
-          Azure AS, Azure Synapse
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <!-- Summary -->
+    <section id="summary" class="container">
+      <h3>Summary</h3>
+      <p>{% include 'resume/summary.md' %}</p>
+    </section>
+    <!-- ./ Summary -->
 
-  <!-- Experiences -->
-  <section id="experiences">
-    <!-- Experiences content will go here -->
-    <div class="row">
-      <div class="col-2">Aug. 2017 – Jul. 2022</div>
-      <div class="col-2">Oriflame Software s.r.o.</div>
-      <div class="col-2">Olomouc, Czech Republic</div>
-      <div class="col-2">Datawarehouse developer</div>
-      <div class="col-2">
-        Database programming (procedures) and administration of BI/DWH system...
-      </div>
-      <div class="col-2">
-        Oracle Database 12c R2, Oracle Database 19c, IBM Cognos BI, Power BI,
-        Azure AS, Azure Synapse
-      </div>
-    </div>
-  </section>
-  <!-- ./ Experiences -->
-</section>
+    <section id="techstack" class="container">
+      <h3>Techstack</h3>
+      <ul class="ul">
+        <li class="li">HTML5</li>
+        <li class="li">CSS3</li>
+        <li class="li">JavaScript</li>
+        <li class="li">TypeScript</li>
+        <li class="li">React</li>
+        <li class="li">Node.js</li>
+        <li class="li">Express.js</li>
+        <li class="li">SQL</li>
+        <li class="li">NoSQL (MongoDB)</li>
+        <li class="li">Git & GitHub</li>
+        <li class="li">Responsive Web Design</li>
+        <li class="li">RESTful API Design</li>
+        <li class="li">Web Performance Optimization</li>
+      </ul>
+    </section>
+  </div>
+</div>
