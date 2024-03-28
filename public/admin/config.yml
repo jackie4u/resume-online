@@ -1,3 +1,4 @@
+# https://andrijan.dev/blog/how-to-set-up-netlify-cms-with-astro/
 backend:
   # Use netlify identity as backend
   # name: git-gateway
@@ -5,9 +6,11 @@ backend:
   repo: jackie4u/resume-online
   branch: main
   
-media_folder: "src/static/img"
-public_folder: "/static/img"
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
 
+site_url: https://resume-vackar.netlify.app/
+display_url: https://resume-vackar.netlify.app/
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
 
@@ -20,7 +23,7 @@ collections:
     files:
       - label: "Meta Data"
         name: "metadata"
-        file: "src/_data/metadata.json"
+        file: "src/data/metadata.json"
         fields:
           - { label: Name, name: name, widget: string }
           - { label: URL, name: url, widget: string }
