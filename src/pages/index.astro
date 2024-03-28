@@ -1,25 +1,11 @@
 ---
-layout: layout.html
+import ResumeLayout from '../layouts/ResumeLayout.astro';
+import Summary from './summary.md';
 ---
-
-<div id="resume-wrapper">
-  
-  <div class="resume-toc">
-    <aside>
-      <nav>
-        <ul class="menu section-nav">
-          <li class="item"><a href="#contact">Contact</a></li>
-          <li class="item"><a href="#summary">About</a></li>
-          <li class="item"><a href="#techstack">Techstack</a></li>
-          <li class="item"><a href="#experiences">Experiences</a></li>
-        </ul>
-      </nav>
-    </aside>
-  </div>
-
-  <div id="resume-content">
-    <section id="contact" class="container">
-      <h3>Contact</h3>
+<ResumeLayout title="Jan Vačkář">
+	
+    <section id="contact" class="prose">
+      <h2 class="text-2xl font-semibold text-gray-900">Contact</h2>
       <ul>
         <li>Email: jackie4u@seznam.cz</li>
         <li>Phone: (+420) 605-868-797</li>
@@ -29,13 +15,15 @@ layout: layout.html
       </ul>
     </section>
 
-    <section id="summary" class="container">
-      <h3>Summary</h3>
-      <p>{% include 'resume/summary.md' %}</p>
+    <section id="summary" class="prose">
+			<h2 class="text-2xl font-semibold text-gray-900">Summary</h2>
+			<p class="mt-4 text-gray-500">
+				<Summary />
+			</p>
     </section>
 
-    <section id="techstack" class="container">
-      <h3>Techstack</h3>
+    <section id="techstack" class="prose">
+			<h2 class="text-2xl font-semibold text-gray-900">Techstack</h2>
       <ul class="ul">
         <li class="li">HTML5</li>
         <li class="li">CSS3</li>
@@ -52,5 +40,9 @@ layout: layout.html
         <li class="li">Web Performance Optimization</li>
       </ul>
     </section>
-  </div>
-</div>
+
+    <section id="experiences" class="prose">
+			<h2 class="text-2xl font-semibold text-gray-900">Experiences</h2>
+		</section>
+
+</ResumeLayout>

@@ -1,0 +1,38 @@
+---
+import ResumeHead from '../components/ResumeHead.astro';
+import ResumeHeader from '../components/ResumeHeader.astro';
+import ResumeFooter from '../components/ResumeFooter.astro';
+const { title } = Astro.props;
+---
+
+<body class="antialiased bg-gray-100">
+  <!-- Header remains unchanged -->
+
+  <!-- Main Content with flex-grow -->
+  <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex-grow">
+      <!-- Main content goes here -->
+  </main>
+
+  <!-- Footer remains unchanged -->
+</body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+      <ResumeHead title={ title }/>
+  </head>
+
+  <body class="antialiased bg-gray-100 flex flex-col min-h-screen">
+    <ResumeHeader title={ title } />
+
+    <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex-grow">
+      <slot />
+    </main>
+
+    <ResumeFooter />
+
+  </body>
+
+</html>

@@ -1,9 +1,30 @@
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
 node_modules/
 
-# SSG files
-_site/
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
 
 # Hosting files
 .netlify

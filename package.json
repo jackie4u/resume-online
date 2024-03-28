@@ -1,21 +1,24 @@
 {
-  "name": "Jan Vackar resume",
-  "version": "1.0.0",
+  "name": "resume-online-vackar-jan ",
+  "type": "module",
+  "version": "0.0.2",
   "description": "Personal site with resume",
   "main": "index.html",
+  
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jackie4u/resume-online.git"
   },
   "keywords": [
-    "11ty",
-		"picocss",
-		"eleventy"
+    "astro",
+		"daisyui"
   ],
   "author": "jackie4u",
   "license": "MIT",
@@ -23,7 +26,15 @@
     "url": "https://github.com/jackie4u/resume-online/issues"
   },
   "homepage": "https://github.com/jackie4u/resume-online#readme",
+  "dependencies": {
+    "@astrojs/check": "^0.5.9",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.5.8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.3"
+  },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@tailwindcss/typography": "^0.5.10",
+    "daisyui": "^4.7.3"
   }
 }

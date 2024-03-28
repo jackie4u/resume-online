@@ -1,18 +1,37 @@
-# resume-online
+# Resume Online
 Personal resume site
 
-## setup
+## Used tech
+- Astro
+- Tailwind
+- DaisyUI
 
-Run this:
+## 🚀 Project Structure
 
-```sh
-npm install
-npm start
-```
+Inside this project, you'll see the following folders and files:
 
-Navigate to `http://localhost:8080/` in your web browser.
+- public/* - Your non-code, unprocessed assets (fonts, icons, images, etc.)
+- src/* - Your project source code (components, pages, styles, etc.)
+  - admin/ (specific folder for the Netlify CMS)
+  - data/ (content in form of JSON file)
+  - components/ (any Astro/React/Vue/Svelte/Preact components)
+  - layouts/
+  - pages/ (content as `.astro` or `.md` files, each page is exposed as a route based on its file name)
+  - static/ (style and javascript files)
 
-### Used tech
+- package.json - A project manifest.
+- astro.config.mjs - An Astro configuration file. 
+- tsconfig.json - A TypeScript configuration file.
 
-- [11ty](https://www.11ty.dev/)
-- [Pico CSS](https://picocss.com/)
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
